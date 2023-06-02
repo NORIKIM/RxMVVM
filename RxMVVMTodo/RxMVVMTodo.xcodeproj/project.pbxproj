@@ -15,6 +15,7 @@
 		2562FFA72A28BE29006FA8C0 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FFA62A28BE29006FA8C0 /* RootVC.swift */; };
 		2562FFA92A28BE61006FA8C0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FFA82A28BE61006FA8C0 /* Coordinator.swift */; };
 		2562FFAC2A2A04D2006FA8C0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FFAB2A2A04D2006FA8C0 /* Article.swift */; };
+		2562FFAF2A2A05A6006FA8C0 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FFAE2A2A05A6006FA8C0 /* ArticleService.swift */; };
 		99CA26A6CE9898C8800D9BA2 /* Pods_RxMVVMTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354744DA784CA170169A432A /* Pods_RxMVVMTodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2562FFA62A28BE29006FA8C0 /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		2562FFA82A28BE61006FA8C0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2562FFAB2A2A04D2006FA8C0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		2562FFAE2A2A05A6006FA8C0 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		354744DA784CA170169A432A /* Pods_RxMVVMTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMVVMTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		986CFCDE3C60DC43C8C83C70 /* Pods-RxMVVMTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMVVMTodo.debug.xcconfig"; path = "Target Support Files/Pods-RxMVVMTodo/Pods-RxMVVMTodo.debug.xcconfig"; sourceTree = "<group>"; };
 		EB8D1398DE9709B584DF5BC3 /* Pods-RxMVVMTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMVVMTodo.release.xcconfig"; path = "Target Support Files/Pods-RxMVVMTodo/Pods-RxMVVMTodo.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		2562FF902A28BD7C006FA8C0 /* RxMVVMTodo */ = {
 			isa = PBXGroup;
 			children = (
+				2562FFAD2A2A0584006FA8C0 /* Services */,
 				2562FFAA2A2A04B9006FA8C0 /* Model */,
 				2562FFA52A28BE02006FA8C0 /* Controller */,
 				2562FF912A28BD7C006FA8C0 /* AppDelegate.swift */,
@@ -94,6 +97,14 @@
 				2562FFAB2A2A04D2006FA8C0 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2562FFAD2A2A0584006FA8C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2562FFAE2A2A05A6006FA8C0 /* ArticleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		83318CF6F687487A6CE361B9 /* Pods */ = {
@@ -230,6 +241,7 @@
 				2562FFA72A28BE29006FA8C0 /* RootVC.swift in Sources */,
 				2562FF962A28BD7C006FA8C0 /* ViewController.swift in Sources */,
 				2562FFAC2A2A04D2006FA8C0 /* Article.swift in Sources */,
+				2562FFAF2A2A05A6006FA8C0 /* ArticleService.swift in Sources */,
 				2562FFA92A28BE61006FA8C0 /* Coordinator.swift in Sources */,
 				2562FF922A28BD7C006FA8C0 /* AppDelegate.swift in Sources */,
 				2562FF942A28BD7C006FA8C0 /* SceneDelegate.swift in Sources */,
