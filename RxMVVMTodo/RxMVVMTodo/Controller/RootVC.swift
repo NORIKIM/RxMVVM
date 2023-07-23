@@ -14,10 +14,12 @@ class RootVC: UIViewController {
     // MARK: Properties
     let disposeBag = DisposeBag()
     let viewModel: RootViewModel
-    private let articles = BehaviorRelay<[Article]>(value: [])
-    var articlesObserver: Observable<[Article]> { // 값의 변화를 항상 감시하기 위함
-        return articles.asObservable()
+    private let articleVM = BehaviorRelay<[ArticleVM]>(value:[])
+    var articleVMObserver:Observable<[ArticleVM]> {
+        return articleVM.asObservable()
     }
+
+    
     // MARK: Lifecycles
     init(viewModel: RootViewModel) {
         self.viewModel = viewModel
@@ -44,15 +46,15 @@ class RootVC: UIViewController {
     
     // MARK: Helper
     func fetchArticles() {
-        self.viewModel.fetchArticles().subscribe { articles in
-            self.articles.accept(articles)
-        }.disposed(by: disposeBag)
-    }
+        viewModel.fetchArticles().subscribe(onNext: { articleVM in
+            self.articleVM.accept(articleVM)
+        }).disposed(by: disposeBag)
 
+    }
+    
     func subscribe() {
-        self.articlesObserver.subscribe { articles in
-            // colletionview 생성할 때 colletionview.reloadData 함수를 호출
-            
-        }.disposed(by: disposeBag)
+        self.articleVMObserver.subscribe(onNext: { articles in
+            print(articles)
+        }).disposed(by: disposeBag)
     }
 }
