@@ -9,13 +9,13 @@ import Foundation
 
 struct Memo: Equatable {
     var content: String
-    var inserDate: Date
+    var insertDate: Date
     var identity: String
     
-    init(content: String, inserDate = Date()) {
+    init(content: String, insertDate:Date = Date()) {
         self.content = content
-        self.inserDate = inserDate
-        self.identity = "\(inserDate.timeIntervalSinceReferenceDate)"
+        self.insertDate = insertDate
+        self.identity = "\(insertDate.timeIntervalSinceReferenceDate)"
     }
     
     init(original: Memo, updatedContent: String) {
