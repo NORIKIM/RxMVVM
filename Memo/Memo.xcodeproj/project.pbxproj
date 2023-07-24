@@ -13,6 +13,7 @@
 		25061E9C2A6D141D00F92248 /* Memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25061E9A2A6D141D00F92248 /* Memo.xcdatamodeld */; };
 		25061E9E2A6D141E00F92248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25061E9D2A6D141E00F92248 /* Assets.xcassets */; };
 		25061EA12A6D141E00F92248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25061E9F2A6D141E00F92248 /* LaunchScreen.storyboard */; };
+		25061EAE2A6E39AA00F92248 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25061EAD2A6E39AA00F92248 /* Memo.swift */; };
 		F5C3D00A3AE3159558F0C543 /* Pods_Memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16913F7BE780DEA9D4AF5348 /* Pods_Memo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		25061E9D2A6D141E00F92248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25061EA02A6D141E00F92248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25061EA22A6D141E00F92248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25061EAD2A6E39AA00F92248 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		977BD5032CE8F502A004EB3E /* Pods-Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.release.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.release.xcconfig"; sourceTree = "<group>"; };
 		BBDB9ADBF4C20B33A52433C9 /* Pods-Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.debug.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		25061EA82A6E384F00F92248 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25061EAD2A6E39AA00F92248 /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				25061E922A6D141D00F92248 /* AppDelegate.swift in Sources */,
 				25061E942A6D141D00F92248 /* SceneDelegate.swift in Sources */,
 				25061E9C2A6D141D00F92248 /* Memo.xcdatamodeld in Sources */,
+				25061EAE2A6E39AA00F92248 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
