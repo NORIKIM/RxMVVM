@@ -8,7 +8,11 @@
 // 메모 목록 화면에서 사용
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class MemoListViewModel {
-    
+class MemoListViewModel: CommonViewModel {
+    var memoList: Observable<[Memo]> {
+        return storage.memoList()
+    }
 }
